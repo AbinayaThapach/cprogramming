@@ -1,0 +1,33 @@
+#include<stdio.h>
+main()
+{
+int(*a)[2],(*b)[2],(*pro)[2],i,j,k,sum=0;
+for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+		scanf("%d",*(a+i)+j);	}}
+		for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			scanf("%d",*(b+i)+j);}}
+			for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			for(k=0;k<2;k++)
+			{
+			
+			sum=*(*(a+i)+k)+*(*(b+k)+j);
+			printf("%d",*(*(pro+i)+j));}
+			*(*(pro+i)+j)=sum;
+			sum=0;
+			}}
+			for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			printf("%d",*(*(pro+i)+j));
+	}}
+}
